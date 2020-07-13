@@ -2,6 +2,10 @@
   <div id="app">
     <Header />
     <router-view/>
+    <div class="links">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
   </div>
 </template>
 
@@ -37,5 +41,10 @@ export default {
   }
   .btn:hover {
     background: #666;
+  }
+
+  .links {
+    text-align: center;
+    margin: 5px;
   }
 </style>
